@@ -1,0 +1,85 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.pimg1 {
+  background-image: url(./images/Image1.jpg);
+  min-height: 100%;
+}
+.pimg2 {
+    background-image: url(./images/Image2.jpg);
+    min-height: 40%;
+  }
+.pimg3 {
+    background-image: url(./images/Image3.jpg);
+    min-height: 40%;
+  }
+  .pimg1,.pimg2,.pimg3{
+      position: relative;
+      opacity: 0.8;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* at this point, fixed suply us parallax features */
+      background-attachment: fixed;
+      /* background-attachment: scroll; */
+  }
+  .section{
+      text-align: justify;
+      padding: 50px 80px;
+      
+  }
+  h2{
+      text-align: center;
+  }
+  .section-light{
+      background-color: #f4f4f4;
+  }
+  .section-dark{
+    background-color: #282e34;
+    color: #f4f4f4;
+}
+.ptext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.849);
+    font-size: 2em;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+}
+.ptext .border {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    opacity: 0.8;
+   
+}
+.ptext .border.trans {
+    background-color: transparent;
+}
+.footer {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 800;
+    opacity: 1;
+
+}
+@media screen and (max-width : 568px) {
+    .pimg1,.pimg2,.pimg3 {
+        background-attachment: scroll;
+    }
+
+}
